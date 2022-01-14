@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import MenuIcon from "../../assets/logo/MenuIcon";
-import "./MobileNav.css";
 import SideMenu from "./SideMenu";
 
 const MobileNav = (props) => {

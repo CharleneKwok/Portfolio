@@ -4,9 +4,9 @@ import "./Title.css";
 const Title = (props) => {
   const classes = "title " + props.className;
   return (
-    <h2 className={classes} onClick={props.onClick}>
+    <h3 className={classes} onClick={props.onClick}>
       <a href="#">{props.text}</a>
-    </h2>
+    </h3>
   );
 };
 

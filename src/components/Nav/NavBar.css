@@ -6,7 +6,8 @@
   justify-content: space-around;
   background-color: transparent;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
+  /* z-index: 50; */
 }
 
 .navbar__logo {
