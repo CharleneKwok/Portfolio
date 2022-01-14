@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
-  height: 80vh;
+  height: 75vh;
 }
 
 .main-page__background {
@@ -13,7 +13,7 @@
   height: 100vh;
   background-image: linear-gradient(
     to left bottom,
-    transparent 60%,
+    var(--background) 60%,
     var(--pink) 80%
   );
   background-size: cover;
@@ -25,7 +25,9 @@
   /* margin: 3rem; */
   border: 3px solid white;
   border-radius: 10px;
-  width: 25vw;
+  width: 25%;
+  animation: show-image 300ms ease forwards;
+  opacity: 0;
 }
 
 .main-page__image img {
@@ -54,8 +56,50 @@
   margin: 0;
 }
 
+.main-page__text h1 a {
+  cursor: pointer;
+}
+
+.main-page__text h1 a:hover,
+.main-page__text h1 a:active {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='rgb(255, 238, 220)' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  text-decoration: none;
+  color: #c899a9;
+}
+
 .main-page__text p {
   font-size: 1.4rem;
+}
+
+.main-page__down-arrow {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 500ms ease;
+  animation: move-arrow 5s ease 8s 4;
+}
+
+.main-page__down-arrow:hover,
+.main-page__down-arrow :active {
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes move-arrow {
+  0% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes movePic {
@@ -66,6 +110,16 @@
   100% {
     left: -30px;
     top: -30px;
+  }
+}
+
+@keyframes show-image {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

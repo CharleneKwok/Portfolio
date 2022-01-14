@@ -3,8 +3,8 @@ import "./Name.css";
 
 const Name = () => {
   return (
-    <svg viewBox="0 0 210px 58px" width="210px" height="58px" className="logo">
-      <text x="50%" y="90%" text-anchor="middle">
+    <svg viewBox="0 0 210 58" width="210px" height="58px" className="logo">
+      <text x="50%" y="90%" textAnchor="middle">
         Charlene
       </text>
     </svg>

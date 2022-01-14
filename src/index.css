@@ -5,6 +5,7 @@
   --light-purple: #a999b3;
   --dark: #242a53;
   --light-dark: #575171;
+  --background: #3f3f3f;
 }
 
 * {
@@ -17,5 +18,22 @@ html {
 
 body {
   margin: 0;
-  background: #3f3f3f;
+  background: var(--background);
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px rgb(152, 151, 151) solid;
+  border-radius: 100px;
+}
+
+::selection {
+  background: var(--deep-purple); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--deep-purple); /* Gecko Browsers */
 }
