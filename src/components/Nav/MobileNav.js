@@ -1,10 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
+import MenuIcon from "../../assets/logo/MenuIcon";
+import "./MobileNav.css";
+import SideMenu from "./SideMenu";
 
 const MobileNav = (props) => {
-  return <div></div>;
-};
+  const [open, setOpen] = useState(false);
+  const classes = "mobile-nav " + props.className;
 
-MobileNav.propTypes = {};
+  const closeHandler = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div className={classes}>
+      <span>
+        <MenuIcon onClick={() => setOpen(true)} />
+        {open && <SideMenu onClose={closeHandler} />}
+      </span>
+    </div>
+  );
+};
 
 export default MobileNav;

@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
 
+:root {
+  --deep-purple: #6a5977;
+  --pink: #caabb8;
+  --light-purple: #a999b3;
+  --dark: #242a53;
+  --light-dark: #575171;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,4 +18,5 @@ html {
 
 body {
   margin: 0;
+  background: #3f3f3f;
 }
