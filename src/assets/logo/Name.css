@@ -18,7 +18,7 @@
   0% {
     stroke-dasharray: 0 50%;
     stroke-dashoffset: 20%;
-    fill: hsl(189, 68%, 75%);
+    fill: var(--deep-purple);
   }
 
   100% {
