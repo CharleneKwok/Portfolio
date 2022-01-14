@@ -4,7 +4,7 @@ import "./NavBar.css";
 import Title from "../UI/Title";
 import MobileNav from "./MobileNav";
 
-const NavBar = (props) => {
+const NavBar = () => {
   return (
     <div className="navbar">
       <span className="navbar__logo">
