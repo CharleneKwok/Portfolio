@@ -24,13 +24,15 @@
 }
 
 .main-page__image img:hover {
-  animation: move-pic-back 300ms ease-out;
+  animation: move-pic-back 300ms ease;
 }
 
 .main-page__image img {
+  object-fit: cover;
   position: relative;
   animation: movePic 700ms ease 500ms forwards;
   border-radius: 10px;
+  margin-bottom: -8px;
 }
 
 .main-page__text {
