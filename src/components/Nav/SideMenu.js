@@ -1,20 +1,37 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Title from "../UI/Title";
-
 import "./SideMenu.css";
 
 const Backdrop = (props) => {
   return <div className="side-menu__backdrop" onClick={props.onClick}></div>;
 };
 
-const ShowMenu = () => {
+const ShowMenu = ({ ctx, onClose }) => {
   return (
     <div className="side-menu__show">
       <div className="side-menu__container">
-        <Title text="PROJECTS" />
-        <Title text="SKILLS" />
-        <Title text="CONTACT" />
+        <Title
+          text="PROJECTS"
+          onClick={() => {
+            ctx.product();
+            onClose();
+          }}
+        />
+        <Title
+          text="SKILLS"
+          onClick={() => {
+            ctx.skills();
+            onClose();
+          }}
+        />
+        <Title
+          text="CONTACT"
+          onClick={() => {
+            ctx.contact();
+            onClose();
+          }}
+        />
       </div>
     </div>
   );
@@ -29,7 +46,7 @@ const SideMenu = (props) => {
       )}
 
       {ReactDOM.createPortal(
-        <ShowMenu />,
+        <ShowMenu ctx={props.click} onClose={props.onClose} />,
         document.getElementById("sideBar-root")
       )}
     </>
