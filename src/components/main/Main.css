@@ -7,9 +7,9 @@
   min-height: 100vh;
   max-height: auto;
   background-image: linear-gradient(
-    to left bottom,
-    var(--background) 60%,
-    var(--pink) 80%
+    180deg,
+    var(--background) 50%,
+    var(--light-purple) 85%
   );
   background-size: cover;
 }

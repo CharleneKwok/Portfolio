@@ -1,0 +1,45 @@
+.proj {
+  position: relative;
+}
+
+.proj__lamp img {
+  width: 20%;
+}
+
+.proj__wfh {
+  z-index: -10;
+}
+
+.proj__wfh img {
+  position: absolute;
+  width: 20%;
+  right: 5%;
+  bottom: 0%;
+}
+
+.proj__titles {
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proj__pics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .proj__lamp img {
+    width: 40%;
+  }
+
+  .proj__wfh img {
+    width: 40%;
+  }
+
+  .proj__pics {
+    width: 70%;
+  }
+}
