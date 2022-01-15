@@ -5,7 +5,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Main = (props) => {
   return (
-    <ParallaxLayer offset={0} speed={0.2}>
+    <ParallaxLayer offset={0} speed={0}>
       <div className="main-page">
         <div className="main-page__image">
           <img src={photo} alt="illustration" width="100%" height="100%" />

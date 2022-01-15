@@ -30,7 +30,27 @@
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+.proj__flower {
+  z-index: -11;
+}
+
+.proj__flower img {
+  position: absolute;
+  left: 13%;
+  bottom: -2%;
+}
+
+.proj__flower1 {
+  z-index: -11;
+}
+
+.proj__flower1 img {
+  position: absolute;
+  right: 13%;
+  top: 30%;
+}
+
+@media (max-width: 500px) {
   .proj__lamp img {
     width: 40%;
   }

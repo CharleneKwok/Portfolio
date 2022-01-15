@@ -6,7 +6,7 @@
     "web web"
     "expense food"
     "travel .";
-  width: 60vw;
+  width: 48vw;
   height: auto;
   border: 3px var(--grey) solid;
   border-radius: 30px;
@@ -45,11 +45,17 @@
   grid-area: travel;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .pics__container {
     grid-template-rows: 30px 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "web" "expense" "food" "travel";
-    width: 80%;
+    width: 60%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .pics__container {
+    width: 70%;
   }
 }
