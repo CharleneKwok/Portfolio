@@ -10,29 +10,13 @@ import AllClick from "./components/store/AllClick";
 function App() {
   const ref = useRef();
 
-  const clickProduct = () => {
-    return ref.current.scrollTo(1);
-  };
-
-  const clickSkills = () => {
-    return ref.current.scrollTo(2);
-  };
-
-  const clickName = () => {
-    return ref.current.scrollTo(0);
-  };
-
-  const clickContact = () => {
-    return ref.current.scrollTo(3);
-  };
-
   return (
     <AllClick.Provider
       value={{
-        product: clickProduct,
-        name: clickName,
-        contact: clickContact,
-        skills: clickSkills,
+        product: () => ref.current.scrollTo(1),
+        name: () => ref.current.scrollTo(0),
+        contact: () => ref.current.scrollTo(3),
+        skills: () => ref.current.scrollTo(2),
       }}
     >
       <Parallax pages={3} ref={ref}>

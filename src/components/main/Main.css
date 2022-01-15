@@ -15,12 +15,16 @@
 }
 
 .main-page__image {
-  /* margin: 3rem; */
   border: 3px solid white;
   border-radius: 10px;
   width: 25%;
-  animation: show-image 300ms ease forwards;
+  animation: show-image 300ms ease-in forwards;
   opacity: 0;
+  cursor: pointer;
+}
+
+.main-page__image img:hover {
+  animation: move-pic-back 300ms ease-out;
 }
 
 .main-page__image img {
@@ -76,6 +80,17 @@
   100% {
     left: -30px;
     top: -30px;
+  }
+}
+
+@keyframes move-pic-back {
+  0% {
+    left: -30px;
+    top: -30px;
+  }
+  100% {
+    left: 0;
+    top: 0;
   }
 }
 

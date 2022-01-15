@@ -5,7 +5,9 @@ const Title = (props) => {
   const classes = "title " + props.className;
   return (
     <h3 className={classes} onClick={props.onClick}>
-      <a href={props.link}>{props.text}</a>
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        {props.text}
+      </a>
     </h3>
   );
 };
