@@ -11,7 +11,7 @@ import mail from "../../assets/icons/mail.png";
 const Contact = (props) => {
   return (
     <>
-      <ParallaxLayer offset={2.6} speed={0} style={{ zIndex: -100 }}>
+      <ParallaxLayer offset={2.5} speed={0.1} style={{ zIndex: -100 }}>
         <div className="contact">
           <div className="contact__web">
             <span className="contact__web--dot" />
