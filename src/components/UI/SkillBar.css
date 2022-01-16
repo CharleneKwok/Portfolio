@@ -1,0 +1,48 @@
+.skill-bar {
+  display: grid;
+  grid-template-columns: 200px 3fr 60px;
+  align-items: center;
+  width: 90%;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+
+.skill-bar__name {
+  display: inline-block;
+  margin: 0;
+  justify-self: center;
+  font-size: 1.7rem;
+}
+
+.skill-bar__bar {
+  height: 20px;
+  border-radius: 30px;
+  border: 2px solid var(--background);
+  overflow: hidden;
+}
+
+.skill-bar__fill {
+  height: 100%;
+  /* background-color: var(--super-light); */
+  background-image: linear-gradient(
+    to left,
+    var(--pink) 10%,
+    var(--deep-purple) 90%
+  );
+}
+
+.skill-bar__num {
+  text-align: center;
+  margin: 0;
+}
+
+.skill-bar:hover .skill-bar__fill {
+  animation: reload 1s ease-in-out;
+  background-color: var(--pink);
+}
+
+@keyframes reload {
+  0% {
+    width: 0;
+  }
+}
