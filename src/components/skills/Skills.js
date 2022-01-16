@@ -1,13 +1,12 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import "./Skills.css";
 
 const Skills = (props) => {
   return (
-    <ParallaxLayer
-      offset={2}
-      speed={1}
-      style={{ backgroundColor: "#897da5" }}
-    ></ParallaxLayer>
+    <div>
+      <ParallaxLayer offset={2} speed={0.5} className="skills"></ParallaxLayer>
+    </div>
   );
 };
 

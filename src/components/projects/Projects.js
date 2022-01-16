@@ -43,7 +43,7 @@ const Projects = (props) => {
       <ParallaxLayer offset={1} speed={-0.2} className="proj__video proj__illu">
         <img src={video} alt="video call" width="15%" />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={-0.4} className="proj__wfh proj__illu">
+      <ParallaxLayer offset={1} speed={-0.2} className="proj__wfh proj__illu">
         <img src={wfh} alt="wfh" />
       </ParallaxLayer>
       {/* super small */}

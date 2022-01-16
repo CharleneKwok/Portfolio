@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import "./components/Nav/NavBar.css";
 import AllClick from "./components/store/AllClick";
+import Contact from "./components/contact/Contact";
 
 function App() {
   const ref = useRef();
@@ -19,7 +20,7 @@ function App() {
         skills: () => ref.current.scrollTo(2),
       }}
     >
-      <Parallax pages={3} ref={ref}>
+      <Parallax pages={4} ref={ref}>
         <ParallaxLayer
           offset={0}
           speed={0}
@@ -31,6 +32,7 @@ function App() {
         <Main />
         <Projects />
         <Skills />
+        <Contact />
       </Parallax>
     </AllClick.Provider>
   );

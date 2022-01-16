@@ -1,10 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Contact = (props) => {
-  return <div></div>;
+  return (
+    <ParallaxLayer
+      offset={3}
+      speed={0}
+      style={{ backgroundColor: "#a999b3" }}
+    ></ParallaxLayer>
+  );
 };
-
-Contact.propTypes = {};
 
 export default Contact;

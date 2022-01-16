@@ -1,0 +1,5 @@
+.skills {
+  background-color: #92859f;
+  box-shadow: 0 9px 8px var(--light-purple) inset,
+    0 -9px 8px var(--light-purple) inset;
+}
