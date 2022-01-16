@@ -1,0 +1,94 @@
+.contact {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "web web" "contact img";
+  width: 80%;
+  height: auto;
+  background-color: var(--projects);
+  margin: auto;
+  border-radius: 50px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20%;
+  border: 2px var(--grey) solid;
+}
+
+.contact__web {
+  width: 100%;
+  grid-area: web;
+  justify-self: start;
+  border-bottom: 2px var(--grey) solid;
+}
+
+.contact__web--dot {
+  margin-left: 20px;
+  height: 12px;
+  width: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.contact__info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: contact;
+  padding: 20px;
+}
+
+.contact__info--gmail {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.contact__info--gmail p {
+  margin: 0;
+}
+
+.contact__info--icons {
+  margin: 30px 0;
+}
+
+.contact__info--icons a {
+  margin: 20px;
+}
+
+.contact__avatar {
+  width: 70%;
+  opacity: 0.6;
+  grid-area: img;
+  padding: 20px;
+}
+
+.contact__info--icons a img:hover,
+.contact__info--icons a img:active {
+  animation: moveUp 800ms ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+@media (max-width: 850px) {
+  .contact {
+    display: grid;
+    grid-template-rows: 30px 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "web" "contact" "img";
+  }
+}
