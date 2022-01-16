@@ -47,7 +47,7 @@
 }
 
 .main-page__text h1 {
-  font-family: "Caveat", cursive;
+  font-family: var(--name-font);
   letter-spacing: 3px;
   color: #c899a9;
   font-weight: 700;

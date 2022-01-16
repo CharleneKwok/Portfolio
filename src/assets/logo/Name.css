@@ -4,7 +4,7 @@
 }
 
 .logo text {
-  font-family: "Permanent Marker", cursive;
+  font-family: var(--logo-font);
   letter-spacing: 3px;
   stroke: #ffa5d8;
   font-size: 1.7rem;

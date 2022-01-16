@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500;700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500;700&family=Comforter+Brush&display=swap");
+
 :root {
   --deep-purple: #897da5;
   --pink: #caabb8;
@@ -6,6 +7,10 @@
   --background: #3f3f3f;
   --projects: rgba(197, 197, 197, 0.1);
   --grey: rgba(0, 0, 0, 0.2);
+  --main-font: "Architects Daughter", cursive;
+  --big-title: "Comforter Brush", cursive;
+  --name-font: "Caveat", cursive;
+  --logo-font: "Permanent Marker", cursive;
 }
 
 * {
@@ -13,7 +18,7 @@
 }
 
 html {
-  font-family: "Architects Daughter", cursive;
+  font-family: var(--main-font);
 }
 
 body {

@@ -7,9 +7,10 @@ const Card = (props) => {
   const pics = props.pic;
   return (
     <div className={classes}>
-      <img src={pics.from} width="100%" className="card_img" />
+      <img src={pics.from} width="100%" className="card_img" alt={pics.name} />
       <span className="card__backdrop" />
       <div className="card__buttons">
+        <p>{pics.text}</p>
         <Title text="Code" link={pics.code} />
         <Title text="Link" link={pics.link} />
       </div>

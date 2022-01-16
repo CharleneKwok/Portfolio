@@ -11,18 +11,21 @@ const images = [
     from: expense,
     code: "https://github.com/CharleneKwok/Expense-Tracker",
     link: "https://expense-tracker499.netlify.app/",
+    text: "React/CSS",
   },
   {
     name: "food",
     from: food,
     code: "https://github.com/CharleneKwok/FoodOrder",
     link: "https://food-order499.netlify.app",
+    text: "React/CSS",
   },
   {
     name: "travel",
     from: travel,
     code: "https://github.com/CharleneKwok/Google-Maps-Travel-App",
     link: "https://travel-advisor499.netlify.app",
+    text: "React/CSS",
   },
 ];
 const ProjectItems = (props) => {

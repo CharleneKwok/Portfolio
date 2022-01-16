@@ -8,6 +8,8 @@
   align-items: center;
   position: fixed;
   z-index: 50;
+  animation: show-bar 700ms ease 500ms forwards;
+  opacity: 0;
 }
 
 .navbar__logo {
@@ -21,6 +23,15 @@
 
 .navbar__mobile {
   margin-top: 10px;
+}
+
+@keyframes show-bar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 720px) {
