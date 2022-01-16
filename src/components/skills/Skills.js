@@ -91,7 +91,7 @@ const Skills = (props) => {
         </div>
       </ParallaxLayer>
       {/* skills */}
-      <ParallaxLayer offset={2} speed={1}>
+      <ParallaxLayer offset={2} speed={1.1}>
         <div className="skills__list">
           {data.map((skill) => (
             <SkillItem
