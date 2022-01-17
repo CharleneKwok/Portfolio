@@ -16,7 +16,7 @@ function App() {
       value={{
         product: () => ref.current.scrollTo(1),
         name: () => ref.current.scrollTo(0),
-        contact: () => ref.current.scrollTo(2.7),
+        contact: () => ref.current.scrollTo(2.9),
         skills: () => ref.current.scrollTo(2),
       }}
     >
