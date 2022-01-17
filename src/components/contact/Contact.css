@@ -12,6 +12,7 @@
   align-items: center;
   margin-top: 30%;
   border: 2px var(--grey) solid;
+  overflow: hidden;
 }
 
 .contact__web {
@@ -72,8 +73,13 @@
 
 .contact__avatar {
   width: 70%;
+  height: auto;
   opacity: 0.6;
   padding: 20px;
+}
+
+.contact__avatar:hover {
+  animation: moveUp2 800ms ease-in-out forwards;
 }
 
 .contact__info--icons a img:hover,
@@ -101,6 +107,19 @@
   }
   100% {
     transform: translateY(-10%);
+  }
+}
+
+@keyframes moveUp2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(-2%);
   }
 }
 
