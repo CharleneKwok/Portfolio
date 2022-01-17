@@ -2,11 +2,13 @@ import React from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
 import "./Contact.css";
 import avatar from "../../assets/Avatar.png";
-import fb from "../../assets/icons/fb.png";
-import git from "../../assets/icons/git.png";
-import linkedin from "../../assets/icons/in.png";
-import ins from "../../assets/icons/ins.png";
-import mail from "../../assets/icons/mail.png";
+import fb from "../../assets/icons/fb.svg";
+import git from "../../assets/icons/git.svg";
+import linkedin from "../../assets/icons/in.svg";
+import ins from "../../assets/icons/ins.svg";
+import mail from "../../assets/icons/mail.svg";
+import mailOpen from "../../assets/icons/mail-open.svg";
+import reply from "../../assets/icons/Reply.svg";
 
 const Contact = (props) => {
   return (
@@ -19,10 +21,7 @@ const Contact = (props) => {
             <span className="contact__web--dot" />
           </div>
           <div className="contact__info">
-            <a className="contact__info--gmail">
-              <img src={mail} alt="email" />
-              <p>charlenekwok499@gmail.com</p>
-            </a>
+            <img src={reply} width="80%" alt="reply message" />
             <div className="contact__info--icons">
               <a
                 href="https://www.facebook.com/zhanxian.kwok"
@@ -54,7 +53,13 @@ const Contact = (props) => {
               </a>
             </div>
           </div>
-          <img src={avatar} alt="avatar" className="contact__avatar" />
+          <div className="contact__me">
+            <img src={avatar} alt="avatar" className="contact__avatar" />
+            <div className="contact__email">
+              <img src={mail} width="7%" alt="email" className="email" />
+              <p>charlenekwok499@gmail.com</p>
+            </div>
+          </div>
         </div>
       </ParallaxLayer>
     </>

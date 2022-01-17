@@ -2,15 +2,15 @@
   display: grid;
   grid-template-rows: 30px 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "web web" "contact img";
-  width: 80%;
+  grid-template-areas: "web web" "img contact";
+  width: 75%;
   height: auto;
   background-color: var(--projects);
   margin: auto;
   border-radius: 50px;
   justify-items: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 30%;
   border: 2px var(--grey) solid;
 }
 
@@ -36,39 +36,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   grid-area: contact;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
-.contact__info--gmail {
-  display: flex;
-  flex-direction: row;
-  vertical-align: middle;
+.contact__info h1 {
+  margin: 10px 20px;
+  align-self: flex-start;
+  color: #493041;
 }
 
-.contact__info--gmail p {
-  margin: 0;
+.contact__info p {
+  margin: 0 20px;
+  font-weight: 900;
+  color: var(--background);
+  font-size: 1.4rem;
 }
 
 .contact__info--icons {
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .contact__info--icons a {
-  margin: 20px;
+  margin: 0 10px;
+}
+
+.contact__me {
+  grid-area: img;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact__avatar {
   width: 70%;
   opacity: 0.6;
-  grid-area: img;
   padding: 20px;
 }
 
 .contact__info--icons a img:hover,
 .contact__info--icons a img:active {
   animation: moveUp 800ms ease-in-out forwards;
+}
+
+.contact__email {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__email a {
+  padding-left: 10px;
+  display: inline-block;
 }
 
 @keyframes moveUp {
@@ -84,11 +104,34 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (min-width: 800px) and (max-width: 1000px) {
   .contact {
     display: grid;
-    grid-template-rows: 30px 1fr 1fr;
+    margin-top: 56%;
+  }
+
+  .contact__email a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    display: grid;
+    grid-template-rows: 30px auto auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "web" "contact" "img";
+    grid-template-areas: "web" "img" "contact";
+    margin-top: 70%;
+    row-gap: 30px;
+  }
+
+  .contact__email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__email a {
+    font-size: 0.8rem;
   }
 }
