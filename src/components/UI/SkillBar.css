@@ -41,8 +41,23 @@
   background-color: var(--pink);
 }
 
+.skill-bar:hover .skill-bar__name,
+.skill-bar:hover .skill-bar__num {
+  color: var(--pink);
+}
+
 @keyframes reload {
   0% {
     width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-bar__name {
+    font-size: 1.3rem;
+  }
+
+  .skill-bar {
+    grid-template-columns: 150px 3fr 60px;
   }
 }

@@ -18,11 +18,29 @@
   width: 100%;
 }
 
+.skill-item__other:hover {
+  color: var(--pink);
+  font-weight: 700;
+}
+
 .skill-item__line {
   opacity: 0.5;
   transition: all 300ms ease;
+  width: 12%;
 }
 
 .skill-item:hover .skill-item__line {
   opacity: 1;
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .skill-item__line {
+    width: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-item__line {
+    width: 40%;
+  }
 }
