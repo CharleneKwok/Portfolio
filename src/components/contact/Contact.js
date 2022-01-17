@@ -7,7 +7,6 @@ import git from "../../assets/icons/git.svg";
 import linkedin from "../../assets/icons/in.svg";
 import ins from "../../assets/icons/ins.svg";
 import mail from "../../assets/icons/mail.svg";
-import mailOpen from "../../assets/icons/mail-open.svg";
 import reply from "../../assets/icons/Reply.svg";
 
 const Contact = (props) => {
