@@ -29,11 +29,11 @@ const data = [
     skills: [
       {
         name: "Java",
-        num: "50%",
+        num: "60%",
       },
       {
         name: "Python",
-        num: "60%",
+        num: "65%",
       },
     ],
   },
