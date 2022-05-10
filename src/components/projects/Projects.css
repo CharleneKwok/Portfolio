@@ -3,6 +3,10 @@
 }
 
 /* big illustrations */
+.proj__lamp {
+  z-index: -10;
+}
+
 .proj__lamp img {
   width: 20%;
 }
@@ -34,11 +38,8 @@
   width: 16%;
 }
 
-.proj__pics {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1000;
+.proj__items {
+  z-index: -9;
 }
 
 /* small illustations */

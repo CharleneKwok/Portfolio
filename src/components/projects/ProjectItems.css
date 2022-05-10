@@ -1,20 +1,94 @@
 .items__container {
-  margin-top: 10%;
-  z-index: -10000;
+  padding-top: 10%;
+  padding-left: 20%;
 }
 
 .item__container {
   /* border: 1px #4f4b4b3c solid;
   border-radius: 30px; */
-  overflow: hidden;
-  margin-bottom: 15px;
-  display: flex;
+  width: 80%;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 423px 2fr;
+  column-gap: 15px;
+}
+
+.item__container:hover {
+  transform: scale(1.01);
+  transition: all 500ms ease-in-out;
+}
+
+.item__container:hover .item__info {
+  color: aliceblue;
 }
 
 .item__image {
   border-radius: 30px;
-  width: 400px;
+  width: 100%;
   height: 270px;
   background-position: center;
   background-size: cover;
+  align-self: center;
+}
+
+.item__info div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item__info h3 {
+  opacity: 0.7;
+}
+
+.item_name {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: large;
+  font-size: 1.4rem;
+  transition: letter-spacing 500ms ease-in-out;
+}
+
+.item__container:hover .item_name {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='rgb(255, 238, 220)' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  text-decoration: none;
+  color: var(--pink);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  .items__container {
+    padding-left: 3%;
+  }
+}
+
+@media (max-width: 700px) {
+  .items__container {
+    padding-left: 0%;
+  }
+  .item__image {
+    width: 250px;
+    height: 150px;
+  }
+  .item__container {
+    width: 100%;
+    height: auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .item__info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .item__image {
+    width: 150px;
+    height: 90px;
+  }
 }

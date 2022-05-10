@@ -4,28 +4,33 @@ import expense from "../../assets/projects/expense.jpg";
 import food from "../../assets/projects/food.jpg";
 import wetravel from "../../assets/projects/Wetravel.jpg";
 import Card from "../UI/Card";
+import Title from "../UI/Title";
 
 const projects = [
   {
     name: "WeTravel",
     code: "https://github.com/CharleneKwok/WeTravel",
     link: "https://wetravel499.netlify.app/",
-    description: "balabala",
+    description:
+      '" Here you can find the restaurants, hotels and attractions around you. Also you can see other user\'s posts to explore the world or post your life. "',
     pic: wetravel,
+    tech: "React, NodeJS, SASS, MongoDB",
   },
   {
-    name: "Food",
+    name: "ReactFood",
     code: "https://github.com/CharleneKwok/FoodOrder",
     link: "https://food-order499.netlify.app",
-    description: "food",
+    description: '" Food order website "',
     pic: food,
+    tech: "React, CSS",
   },
   {
-    name: "expense",
+    name: "Expense",
     code: "https://github.com/CharleneKwok/Expense-Tracker",
     link: "https://expense-tracker499.netlify.app/",
-    description: "expense balabala",
+    description: '" Record your daily respense "',
     pic: expense,
+    tech: "React, CSS",
   },
 ];
 const ProjectItems = (props) => {
@@ -37,7 +42,15 @@ const ProjectItems = (props) => {
             style={{ backgroundImage: `url(${proj.pic})` }}
             className="item__image"
           />
-          <p>{proj.description}</p>
+          <div className="item__info">
+            <a className="item_name">{proj.name}</a>
+            <p>{proj.description}</p>
+            <h3>Tech Stack: {proj.tech}</h3>
+            <div>
+              <Title text="Code" link={proj.code} />
+              <Title text="Website" link={proj.link} />
+            </div>
+          </div>
         </div>
       ))}
     </div>

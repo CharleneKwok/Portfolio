@@ -33,7 +33,7 @@ const Projects = (props) => {
         <img src={line} alt="line" />
       </ParallaxLayer>
       {/* show projects */}
-      <ParallaxLayer offset={1} speed={0} className="proj__pics">
+      <ParallaxLayer offset={1} speed={0.3} className="proj__items">
         <ProjectItems />
       </ParallaxLayer>
       {/* small illustraions */}
