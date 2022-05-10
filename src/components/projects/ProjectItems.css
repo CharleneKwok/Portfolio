@@ -1,61 +1,20 @@
-.pics__container {
-  display: grid;
-  grid-template-rows: 30px 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "web web"
-    "expense food"
-    "travel .";
-  width: 48vw;
-  height: auto;
-  border: 3px var(--grey) solid;
+.items__container {
+  margin-top: 10%;
+  z-index: -10000;
+}
+
+.item__container {
+  /* border: 1px #4f4b4b3c solid;
+  border-radius: 30px; */
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.item__image {
   border-radius: 30px;
-  gap: 30px;
-  /* background-color: var(--pink); */
-  background-color: var(--projects);
-  padding: 10px;
-}
-
-.pics__web {
-  grid-area: web;
-  border-bottom: 3px var(--grey) solid;
-}
-
-.pics__web--dot {
-  height: 20px;
-  width: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  display: inline-block;
-  margin: 3px 7px;
-  margin-left: 16px;
-}
-
-.pics__pic {
-  place-self: center;
-}
-
-.pics__expense {
-  grid-area: expense;
-}
-.pics__food {
-  grid-area: food;
-}
-.pics__travel {
-  grid-area: travel;
-}
-
-@media (max-width: 600px) {
-  .pics__container {
-    grid-template-rows: 30px 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "web" "expense" "food" "travel";
-    width: 60%;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1200px) {
-  .pics__container {
-    width: 70%;
-  }
+  width: 400px;
+  height: 270px;
+  background-position: center;
+  background-size: cover;
 }

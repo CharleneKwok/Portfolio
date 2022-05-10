@@ -16,7 +16,7 @@ const data = [
     skills: [
       {
         name: "JS/React",
-        num: "70%",
+        num: "75%",
       },
       {
         name: "CSS",
@@ -35,11 +35,24 @@ const data = [
         name: "Python",
         num: "65%",
       },
+      {
+        name: "NodeJS",
+        num: "70%",
+      },
     ],
   },
   {
     text: "Other",
-    skills: ["SQL", "Shell", "Perl", "Haskell", "Figma"],
+    skills: [
+      "SQL",
+      "Shell",
+      "Perl",
+      "Haskell",
+      "Figma",
+      "MongoDB",
+      "ExpressJS",
+      "Sass",
+    ],
   },
 ];
 

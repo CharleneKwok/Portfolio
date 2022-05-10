@@ -8,7 +8,7 @@ const SkillBar = (props) => {
       <div className="skill-bar__bar">
         <div className="skill-bar__fill" style={{ width: `${props.length}` }} />
       </div>
-      <h3 className="skill-bar__num">{props.length}</h3>
+      {/* <h3 className="skill-bar__num">{props.length}</h3> */}
     </div>
   );
 };

@@ -11,7 +11,7 @@ const SkillItem = (props) => {
         <div>
           <h2 className="skill-item">
             {data.text}
-            <img src={line} className="skill-item__line" />
+            {/* <img src={line} className="skill-item__line" alt="line" /> */}
           </h2>
           {data.skills.map((skill) => (
             <SkillBar length={skill.num} name={skill.name} key={skill.name} />
@@ -22,7 +22,7 @@ const SkillItem = (props) => {
         <div>
           <h2 className="skill-item">
             {data.text}
-            <img src={line} className="skill-item__line" />
+            {/* <img src={line} className="skill-item__line" alt="line" /> */}
           </h2>
 
           <p className="skill-item__other">{data.skills.join(" , ")}</p>

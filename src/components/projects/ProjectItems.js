@@ -2,46 +2,43 @@ import React from "react";
 import "./ProjectItems.css";
 import expense from "../../assets/projects/expense.jpg";
 import food from "../../assets/projects/food.jpg";
-import travel from "../../assets/projects/travel.jpg";
+import wetravel from "../../assets/projects/Wetravel.jpg";
 import Card from "../UI/Card";
 
-const images = [
+const projects = [
   {
-    name: "expense",
-    from: expense,
-    code: "https://github.com/CharleneKwok/Expense-Tracker",
-    link: "https://expense-tracker499.netlify.app/",
-    text: "React/CSS",
+    name: "WeTravel",
+    code: "https://github.com/CharleneKwok/WeTravel",
+    link: "https://wetravel499.netlify.app/",
+    description: "balabala",
+    pic: wetravel,
   },
   {
-    name: "food",
-    from: food,
+    name: "Food",
     code: "https://github.com/CharleneKwok/FoodOrder",
     link: "https://food-order499.netlify.app",
-    text: "React/CSS",
+    description: "food",
+    pic: food,
   },
   {
-    name: "travel",
-    from: travel,
-    code: "https://github.com/CharleneKwok/Google-Maps-Travel-App",
-    link: "https://travel-advisor499.netlify.app",
-    text: "React/CSS",
+    name: "expense",
+    code: "https://github.com/CharleneKwok/Expense-Tracker",
+    link: "https://expense-tracker499.netlify.app/",
+    description: "expense balabala",
+    pic: expense,
   },
 ];
 const ProjectItems = (props) => {
   return (
-    <div className="pics__container">
-      <div className="pics__web">
-        <span className="pics__web--dot" />
-        <span className="pics__web--dot" />
-        <span className="pics__web--dot" />
-      </div>
-      {images.map((image) => (
-        <Card
-          pic={image}
-          key={image.name}
-          className={`pics__${image.name} pics__pic`}
-        />
+    <div className="items__container">
+      {projects.map((proj, i) => (
+        <div key={i} className="item__container">
+          <div
+            style={{ backgroundImage: `url(${proj.pic})` }}
+            className="item__image"
+          />
+          <p>{proj.description}</p>
+        </div>
       ))}
     </div>
   );

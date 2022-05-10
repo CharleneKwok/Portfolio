@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1000;
 }
 
 /* small illustations */
@@ -48,7 +49,7 @@
 
 .proj__call img {
   position: absolute;
-  left: 13%;
+  left: 3%;
   bottom: 13%;
 }
 
