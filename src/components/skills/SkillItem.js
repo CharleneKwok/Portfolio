@@ -1,7 +1,6 @@
 import React from "react";
 import SkillBar from "../UI/SkillBar";
 import "./SkillItem.css";
-import line from "../../assets/decor/Line2.png";
 
 const SkillItem = (props) => {
   const data = props.skill;

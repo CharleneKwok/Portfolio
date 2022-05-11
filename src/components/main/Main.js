@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Main.css";
 import photo from "../../assets/illustrations/image1.jpeg";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { ParallaxLayer } from "@react-spring/parallax";
 
 const Main = (props) => {
   return (

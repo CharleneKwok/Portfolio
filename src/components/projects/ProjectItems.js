@@ -1,9 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./ProjectItems.css";
 import expense from "../../assets/projects/expense.jpg";
 import food from "../../assets/projects/food.jpg";
 import wetravel from "../../assets/projects/Wetravel.jpg";
-import Card from "../UI/Card";
 import Title from "../UI/Title";
 
 const projects = [
