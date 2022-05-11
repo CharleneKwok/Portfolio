@@ -20,7 +20,7 @@ const projects = [
     name: "ReactFood",
     code: "https://github.com/CharleneKwok/FoodOrder",
     link: "https://food-order499.netlify.app",
-    description: '" Food order website test"',
+    description: '" Food order website "',
     pic: food,
     tech: "React, CSS",
   },
