@@ -1,43 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import "./ProjectItems.css";
-import expense from "../../assets/projects/expense.jpg";
-import food from "../../assets/projects/food.jpg";
-import wetravel from "../../assets/projects/Wetravel.jpg";
 import Title from "../UI/Title";
+import { projects } from "./projectsInfo";
 
-const projects = [
-  {
-    name: "WeTravel",
-    code: "https://github.com/CharleneKwok/WeTravel",
-    link: "https://wetravel499.netlify.app/",
-    description:
-      '" Here you can find the restaurants, hotels and attractions around you. Also you can see other user\'s posts to explore the world or post your life. "',
-    pic: wetravel,
-    tech: "React, NodeJS, SASS, MongoDB",
-  },
-  {
-    name: "ReactFood",
-    code: "https://github.com/CharleneKwok/FoodOrder",
-    link: "https://food-order499.netlify.app",
-    description: '" Food order website "',
-    pic: food,
-    tech: "React, CSS",
-  },
-  {
-    name: "Expense",
-    code: "https://github.com/CharleneKwok/Expense-Tracker",
-    link: "https://expense-tracker499.netlify.app/",
-    description: '" Record your daily respense "',
-    pic: expense,
-    tech: "React, CSS",
-  },
-];
 const ProjectItems = (props) => {
+  const pageNumber = Math.ceil(projects.length / 3);
+  const pageNumList = Array.from({ length: pageNumber }, (v, i) => i + 1);
+  const [currPage, setCurrPage] = useState(1);
+  const [currShowedProjects, setCurrShowedProjects] = useState(
+    projects.slice(0, 3)
+  );
+
+  const changeCurrProjects = (pageNum) => {
+    setCurrPage(pageNum);
+    const start = (pageNum - 1) * 3;
+    const end = pageNum * 3;
+    setCurrShowedProjects(projects.slice(start, end));
+  };
+
   return (
     <div className="items__container">
-      {projects.map((proj, i) => (
-        <div key={i} className="item__container">
+      {currShowedProjects.map((proj, i) => (
+        <div key={proj.name} className="item__container">
           <div
             style={{ backgroundImage: `url(${proj.pic})` }}
             className="item__image"
@@ -53,6 +38,21 @@ const ProjectItems = (props) => {
           </div>
         </div>
       ))}
+      <div className="items__page">
+        {pageNumList.map((pageNum, i) => (
+          <button
+            key={`page_btn_${i}`}
+            className="items__page--btn"
+            style={{
+              border: currPage === pageNum && "1px solid #897da5",
+              transform: currPage === pageNum && "scale(1.3)",
+            }}
+            onClick={() => changeCurrProjects(pageNum)}
+          >
+            {pageNum}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
