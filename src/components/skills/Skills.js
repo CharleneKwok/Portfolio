@@ -7,8 +7,6 @@ import ppl from "../../assets/decor/Confusion.png";
 import fire from "../../assets/decor/Fire.png";
 import smile from "../../assets/decor/smile.png";
 import star from "../../assets/decor/Star.png";
-import arrow from "../../assets/decor/Vector.png";
-import SkillItem from "./SkillItem";
 import MyTimeline from "./Timeline";
 
 const Skills = (props) => {
