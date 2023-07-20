@@ -9,52 +9,7 @@ import smile from "../../assets/decor/smile.png";
 import star from "../../assets/decor/Star.png";
 import arrow from "../../assets/decor/Vector.png";
 import SkillItem from "./SkillItem";
-
-const data = [
-  {
-    text: "Frontend",
-    skills: [
-      {
-        name: "JS/React",
-        num: "75%",
-      },
-      {
-        name: "CSS",
-        num: "65%",
-      },
-    ],
-  },
-  {
-    text: "Backend",
-    skills: [
-      {
-        name: "Java",
-        num: "60%",
-      },
-      {
-        name: "Python",
-        num: "65%",
-      },
-      {
-        name: "NodeJS",
-        num: "70%",
-      },
-    ],
-  },
-  {
-    text: "Other",
-    skills: [
-      "SQL",
-      "Shell",
-      "Perl",
-      "Haskell",
-      "Figma",
-      "MongoDB",
-      "ExpressJS",
-      "Sass",
-    ],
-  },
-];
+import MyTimeline from "./Timeline";
 
 const Skills = (props) => {
   return (
@@ -89,30 +44,24 @@ const Skills = (props) => {
       >
         <img src={star} alt="star" />
       </ParallaxLayer>
-      <ParallaxLayer
+      {/* <ParallaxLayer
         offset={2}
         speed={0.7}
         className="skills__illu skills__illu--arrow"
       >
         <img src={arrow} alt="arrow" />
-      </ParallaxLayer>
+      </ParallaxLayer> */}
       {/* title */}
       <ParallaxLayer offset={2} speed={0.7}>
         <div className="skills__title">
-          <BigTitle text="Skills" className="skills_name" />
+          <BigTitle text="Experiences" className="skills_name" />
           <img src={line} alt="line" />
         </div>
       </ParallaxLayer>
       {/* skills */}
-      <ParallaxLayer offset={2} speed={1.1}>
+      <ParallaxLayer offset={2} speed={0.5}>
         <div className="skills__list">
-          {data.map((skill) => (
-            <SkillItem
-              skill={skill}
-              key={skill.text}
-              isOther={skill.text === "Other" ? true : false}
-            />
-          ))}
+          <MyTimeline />
         </div>
       </ParallaxLayer>
     </div>

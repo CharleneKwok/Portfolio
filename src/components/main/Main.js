@@ -16,8 +16,9 @@ const Main = (props) => {
             Hello! I'm <a>Charlene</a>
           </h1>
           <p>
-            I'm UNSW computer science student and obsessed with designing things
-            by code.
+            Welcome to my website 👋 
+            <br />
+            I am a software developer who enjoys travelling, dancing, trying new things and creating beautiful things with code.
           </p>
         </div>
       </div>

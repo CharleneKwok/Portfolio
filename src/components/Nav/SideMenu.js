@@ -19,7 +19,7 @@ const ShowMenu = ({ ctx, onClose }) => {
           }}
         />
         <Title
-          text="SKILLS"
+          text="EXPERIENCES"
           onClick={() => {
             ctx.skills();
             onClose();

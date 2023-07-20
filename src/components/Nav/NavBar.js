@@ -14,7 +14,7 @@ const NavBar = () => {
       </span>
       <div className="navbar__titles">
         <Title text="PROJECTS" onClick={ctx.product} />
-        <Title text="SKILLS" onClick={ctx.skills} />
+        <Title text="EXPERIENCES" onClick={ctx.skills} />
         <Title text="CONTACT" onClick={ctx.contact} />
       </div>
       <MobileNav className="navbar__mobile" />

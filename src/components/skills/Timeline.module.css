@@ -1,0 +1,51 @@
+.circle {
+  outline: black 1px solid;
+  border-radius: 50%;
+  padding: 2px;
+  width: 7px;
+  height: 7px;
+}
+
+.time {
+  margin: 10px 0px;
+  width: 100px;
+}
+
+.text {
+  margin: 10px 0px;
+  font-size: 1.3rem;
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper:hover .text {
+  color: var(--pink);
+}
+
+.wrapper:hover .time {
+  color: var(--super-light);
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allProgress {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  height: 70px;
+  width: 600px;
+  padding: 0px 10px;
+  background-color: var(--projects);
+  border-radius: 20px;
+  border: 2px var(--grey) solid;
+  overflow: hidden;
+}
