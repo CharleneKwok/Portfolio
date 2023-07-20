@@ -41,11 +41,17 @@
 }
 
 .description {
-  height: 70px;
+  height: 100px;
   width: 600px;
   padding: 0px 10px;
   background-color: var(--projects);
   border-radius: 20px;
   border: 2px var(--grey) solid;
   overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .description {
+    width: auto;
+  }
 }

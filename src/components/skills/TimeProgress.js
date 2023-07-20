@@ -8,7 +8,7 @@ const TimeProgress = (props) => {
       <h2 className={styles.time}>{props.time}</h2>
       <div className={styles.progress}>
         <IconButton>{props.children}</IconButton>
-        <Divider orientation="vertical" style={{ height: "150px" }} />
+        <Divider orientation="vertical" style={{ height: "170px" }} />
       </div>
       <div className={styles.description}>
         <p className={styles.text}>{props.description}</p>
